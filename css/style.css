@@ -83,7 +83,7 @@ p { margin: 0; }
 .top.solid .lang [aria-pressed="true"] { color: var(--cream); background: var(--tx); }
 
 /* ------------------------------------------------ turul 3D */
-.tur { position: relative; height: 560vh; background: #0d0907; color: var(--tx-inv); }
+.tur { position: relative; height: 450vh; background: #0d0907; color: var(--tx-inv); }
 .tur-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
 .tur-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.2s ease; }
 .tur.ready .tur-canvas { opacity: 1; }
@@ -132,7 +132,7 @@ p { margin: 0; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ------------------------------------------------ bun venit */
-.intro { padding: clamp(90px, 13vw, 170px) 0 clamp(70px, 10vw, 140px); }
+.intro { padding: clamp(64px, 8vw, 120px) 0 clamp(56px, 7vw, 100px); }
 .intro-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
 .facts { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .facts li { border-top: 1px solid var(--line); padding-top: 16px; }
@@ -146,7 +146,7 @@ p { margin: 0; }
 .m3 { left: 26%; bottom: 0; width: 42%; aspect-ratio: 3 / 4; }
 
 /* ------------------------------------------------ camere */
-.rooms { padding: clamp(70px, 10vw, 140px) 0; background: var(--paper); }
+.rooms { padding: clamp(60px, 7.5vw, 110px) 0; background: var(--paper); }
 .sec-head { max-width: 760px; margin-bottom: clamp(36px, 5vw, 64px); }
 .sec-sub { color: var(--tx-2); font-size: clamp(16px, 1.3vw, 18px); margin-top: 18px; max-width: 40em; }
 .room-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 28px); }
@@ -165,7 +165,7 @@ p { margin: 0; }
 .room-list .ic { color: var(--brass); margin-top: 1px; }
 
 /* ------------------------------------------------ film */
-.film { background: var(--ink); color: var(--tx-inv); padding: clamp(80px, 11vw, 150px) 0; overflow: hidden; }
+.film { background: var(--ink); color: var(--tx-inv); padding: clamp(60px, 7.5vw, 110px) 0; overflow: hidden; }
 .film .eyebrow { color: var(--brass-2); }
 .film .lead { color: var(--tx-inv-2); }
 .film-grid { display: grid; grid-template-columns: 1fr auto; gap: clamp(40px, 7vw, 110px); align-items: center; }
@@ -177,7 +177,7 @@ p { margin: 0; }
 .film.sound .film-toggle .ic-sound { display: block; }
 
 /* ------------------------------------------------ recenzii */
-.reviews { padding: clamp(80px, 11vw, 150px) 0; }
+.reviews { padding: clamp(60px, 7.5vw, 110px) 0; }
 .rev-grid { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: clamp(32px, 6vw, 96px); align-items: start; }
 .score { background: var(--ink); color: var(--tx-inv); border-radius: calc(var(--r) + 6px); padding: 34px 32px 30px; position: sticky; top: calc(var(--head-h) + 24px); }
 .score-num { font: 300 104px/0.9 var(--serif); color: var(--brass-2); }
@@ -198,18 +198,18 @@ p { margin: 0; }
 .rev-note:empty { display: none; }
 
 /* ------------------------------------------------ locatie */
-.loc { padding: clamp(80px, 11vw, 150px) 0; background: var(--paper); }
+.loc { padding: clamp(60px, 7.5vw, 110px) 0; background: var(--paper); }
 .loc-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(36px, 6vw, 90px); align-items: center; }
 .dist { list-style: none; margin: 32px 0 0; padding: 0; }
 .dist li { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 16px; }
 .dist b { font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .map { position: relative; aspect-ratio: 1 / 1.05; border-radius: calc(var(--r) + 6px); overflow: visible; }
 .map iframe { width: 100%; height: 100%; border: 0; border-radius: calc(var(--r) + 6px); filter: sepia(.18) saturate(.92); background: var(--paper-2); box-shadow: 0 40px 70px -40px rgba(40, 24, 12, .5); }
-.map-photo { position: absolute; left: -7%; bottom: -6%; width: 34%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r); border: 6px solid var(--paper); box-shadow: 0 30px 50px -24px rgba(40, 24, 12, .55); pointer-events: none; }
+.map-photo { position: absolute; left: -7%; bottom: -6%; width: 34%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r); border: 6px solid var(--paper); box-shadow: 0 30px 50px -24px rgba(40, 24, 12, .55); pointer-events: none; }
 .map-credit { position: absolute; right: 10px; bottom: 8px; font-size: 11px; background: rgba(245, 238, 226, .85); padding: 2px 8px; border-radius: 6px; text-decoration: none; color: var(--tx-2); }
 
 /* ------------------------------------------------ bine de stiut */
-.info { padding: clamp(80px, 11vw, 150px) 0; }
+.info { padding: clamp(60px, 7.5vw, 110px) 0; }
 .info-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
 .info-grid li { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 4px; padding: 22px; border: 1px solid var(--line); border-radius: var(--r); background: rgba(255, 255, 255, .28); }
 .info-grid .ic { grid-row: span 2; width: 26px; height: 26px; color: var(--brass); }
@@ -217,7 +217,7 @@ p { margin: 0; }
 .info-grid span { font-size: 14px; color: var(--tx-2); line-height: 1.45; }
 
 /* ------------------------------------------------ rezervare */
-.book { position: relative; color: var(--tx-inv); padding: clamp(110px, 16vw, 220px) 0; overflow: hidden; isolation: isolate; background: var(--ink); }
+.book { position: relative; color: var(--tx-inv); padding: clamp(90px, 11vw, 160px) 0; overflow: hidden; isolation: isolate; background: var(--ink); }
 .book-bg { position: absolute; inset: -8% 0; z-index: -1; }
 .book-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; opacity: .5; will-change: transform; }
 .book-bg::after { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 90% at 30% 60%, rgba(23, 17, 12, .55), rgba(23, 17, 12, .92)); }
@@ -265,6 +265,10 @@ p { margin: 0; }
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
 .js .reveal.in { opacity: 1; transform: none; }
 
+/* ------------------------------------------------ ecrane mari: pagina se largeste, nu ramane ingusta */
+@media (min-width: 1700px) { :root { --max: 1420px; } body { font-size: 18px; } .lead { font-size: 21px; } }
+@media (min-width: 2300px) { :root { --max: 1800px; --head-h: 84px; } body { font-size: 22px; } h2 { font-size: 92px; } .lead { font-size: 27px; } .sec-sub { font-size: 23px; } .eyebrow { font-size: 15px; } .btn { min-height: 60px; font-size: 19px; padding: 0 32px; } .nav a { font-size: 18px; } .brand-name { font-size: 32px; } .brand-sub { font-size: 12px; } .room h3 { font-size: 42px; } .room-list { font-size: 19px; } .facts strong { font-size: 58px; } .facts span, .dist li, .info-grid span { font-size: 19px; } .info-grid b { font-size: 21px; } .quote p { font-size: 40px; } .score-num { font-size: 130px; } .cap-small { font-size: 34px; } .hero-sub { font-size: 38px; } .film-frame { width: 520px; } }
+
 /* ------------------------------------------------ ecrane mici */
 @media (max-width: 980px) {
   .nav { display: none; }
@@ -285,7 +289,7 @@ p { margin: 0; }
   .top { gap: 12px; }
   .top-right { gap: 10px; }
   .lang button { padding: 5px 8px; }
-  .tur { height: 520vh; }
+  .tur { height: 430vh; }
   .tur-dots { top: auto; bottom: calc(26px + env(safe-area-inset-bottom)); right: auto; left: var(--gut); transform: none; display: flex; gap: 2px; }
   .tur-dots button { padding: 8px 6px; }
   .tur-dots button span { display: none; }
@@ -296,7 +300,7 @@ p { margin: 0; }
   .facts span { font-size: 12.5px; }
   .bars li { grid-template-columns: 1fr 70px 30px; }
   .score-num { font-size: 88px; }
-  .map-photo { left: auto; right: 4%; bottom: -8%; width: 30%; }
+  .map-photo { left: auto; right: 4%; bottom: -8%; width: 30%; height: auto; aspect-ratio: 3 / 4; }
   .btn-lg { width: 100%; justify-content: center; }
   .viewer-stage { width: 100%; border-radius: 0; aspect-ratio: auto; height: 100%; }
   .viewer-thumbs button { width: 52px; height: 38px; }
